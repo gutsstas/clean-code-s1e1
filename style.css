@@ -34,7 +34,9 @@
   margin: 0 auto 0;
 }
 
-.add-task__wrapper__input {
+.add-task__wrapper__input,
+.list__item__text,
+.list__item__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -72,9 +74,9 @@ button {
   cursor: pointer;
 }
 
-.add-task__wrapper__button,
-.list__item__btn-edit,
-.list__item__btn-delete {
+.add-task__wrapper__button:hover,
+.list__item__btn-edit:hover,
+.list__item__btn-delete:hover {
   color: #3a3a3a;
 }
 
@@ -157,7 +159,7 @@ button {
 }
 
 /* Completed */
-.completed__list > .list__item__label {
+.completed__list .list__item__label {
   text-decoration: line-through;
     color: #888;
 }
